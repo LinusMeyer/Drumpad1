@@ -1,0 +1,6 @@
+let box = document.getElementById('box');
+box.addEventListener('click', changeBGColor);
+function changeBGColor(event) {
+  let randomColor = Math.floor(Math.random() * 0xffffff).toString(16);
+  event.currentTarget.style.backgroundColor = '#' + randomColor;
+}
